@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>to do this list</h1>
+    <br>
+    <input type="text" id="myInput"></input>
+    <button id="add" >add item</button>
+    <ul id="list">
+    </li>task21<li>
+        </ul>
+</body>
+</html>
+
+        <script>
+        $(document).ready(function(){
+                $("#add").click(function(){
+                    let task = $("#myInput").val() ;
+                    if(task) {
+                        $("#list").append("<li>" + task + "</li>") ;
+                        $("#myInput").val('');
+                    }
+                });
+            });  
+                
+                
+            </script>
